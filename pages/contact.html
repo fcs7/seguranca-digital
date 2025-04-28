@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda & Contato - Segurança Digital</title>
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Estilos para UI moderna -->
+    <link rel="stylesheet" href="../css/modern-ui.css">
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
+                <i class="fas fa-adjust"></i> Contraste
+            </button>
+            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
+                <i class="fas fa-search-plus"></i> Texto Maior
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Ajuda & Contato</h2>
+                <p>Precisa de ajuda com segurança digital? Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+            </section>
+
+            <section class="content">
+                <div class="contact-columns">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-info-circle"></i> Informações de Contato</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>Email: <a href="mailto:contato@segurancadigital.org.br">contato@segurancadigital.org.br</a></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>Telefone: (11) 0800-123-4567 (gratuito)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Horário de atendimento: Segunda a Sexta, 9h às 17h</span>
+                            </li>
+                        </ul>
+
+                        <h3><i class="fas fa-exclamation-triangle"></i> Denunciar Golpes</h3>
+                        <p>Use nosso formulário para denunciar golpes online. Sua denúncia ajuda a proteger outras pessoas.</p>
+                        <p>Informações importantes para incluir:</p>
+                        <ul>
+                            <li>Como o golpe aconteceu (email, WhatsApp, ligação)</li>
+                            <li>Quais informações foram solicitadas</li>
+                            <li>Links ou números de telefone suspeitos</li>
+                        </ul>
+
+                        <h3><i class="fas fa-question-circle"></i> Perguntas Frequentes</h3>
+                        <div class="faq-section">
+                            <details>
+                                <summary>O que fazer se suspeito que fui vítima de um golpe?</summary>
+                                <div class="faq-answer">
+                                    <p>Se você acredita que foi vítima de um golpe online, siga estes passos:</p>
+                                    <ol>
+                                        <li>Entre em contato com seu banco imediatamente</li>
+                                        <li>Altere suas senhas comprometidas</li>
+                                        <li>Reporte às autoridades locais</li>
+                                        <li>Registre denúncia no Procon</li>
+                                        <li>Monitore suas contas bancárias</li>
+                                    </ol>
+                                </div>
+                            </details>
+
+                            <details>
+                                <summary>Como ajudar um familiar a usar a internet com segurança?</summary>
+                                <div class="faq-answer">
+                                    <p>Para ajudar um familiar:</p>
+                                    <ul>
+                                        <li>Configure proteções de segurança básicas</li>
+                                        <li>Ensine sobre senhas fortes</li>
+                                        <li>Explique sinais de golpes comuns</li>
+                                        <li>Incentive a perguntar antes de clicar</li>
+                                        <li>Compartilhe nossos guias de referência</li>
+                                    </ul>
+                                </div>
+                            </details>
+
+                            <details>
+                                <summary>Preciso de antivírus no meu celular?</summary>
+                                <div class="faq-answer">
+                                    <p>Para a maioria dos usuários:</p>
+                                    <ul>
+                                        <li>iPhones normalmente não precisam</li>
+                                        <li>Android pode se beneficiar de app de segurança</li>
+                                        <li>Mantenha seu dispositivo atualizado</li>
+                                        <li>Baixe apenas das lojas oficiais</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h3><i class="fas fa-paper-plane"></i> Envie uma Mensagem</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefone (opcional):</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto:</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="question">Dúvida sobre segurança</option>
+                                    <option value="report">Reportar um golpe</option>
+                                    <option value="feedback">Comentário ou sugestão</option>
+                                    <option value="presentation">Solicitar apresentação</option>
+                                    <option value="other">Outro assunto</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Descreva sua mensagem com detalhes..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="submit-button">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+                </div>
+
+                <div class="emergency-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> Em caso de emergência</h3>
+                    <p>Se você acredita que está sendo vítima de um crime digital neste momento:</p>
+                    <ul>
+                        <li>Desligue seu dispositivo ou desconecte-o da internet</li>
+                        <li>Entre em contato com seu banco imediatamente se informações financeiras estiverem envolvidas</li>
+                        <li>Ligue para o serviço de Polícia Civil mais próximo</li>
+                        <li>Contate a Delegacia de Crimes Cibernéticos: (11) 3311-3700</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Script simples para manipular o envio do formulário
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Em um site real, aqui você enviaria os dados para um servidor
+            // Este é apenas um exemplo de feedback visual
+            
+            const formMessage = document.getElementById('form-message');
+            formMessage.innerHTML = '<div class="success-message"><i class="fas fa-check-circle"></i> Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.</div>';
+            
+            // Limpar o formulário
+            this.reset();
+            
+            // Rolar para a mensagem
+            formMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <!-- Nova barra de acessibilidade -->
+    <script src="../js/accessibility-bar.js"></script>
+    
+    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
+    <div class="sr-only" aria-live="polite">
+        Pressione Alt+A para abrir o menu de acessibilidade.
+    </div>
+    <!-- Script para melhorias de UX -->
+    <script src="../js/enhanced-ux.js"></script>
+</body>
+</html>

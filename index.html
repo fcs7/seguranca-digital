@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Estilos para UI moderna -->
+    <link rel="stylesheet" href="css/modern-ui.css">
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="css/accessibility-bar.css">
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
+                <i class="fas fa-adjust"></i> Contraste
+            </button>
+            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
+                <i class="fas fa-search-plus"></i> Texto Maior
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="pages/password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="pages/email-safety.html"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="pages/online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="pages/resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="pages/contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Bem-vindo à Segurança Digital</h2>
+                <p>Este site foi criado para ajudar pessoas a navegar pelo mundo digital com segurança.</p>
+                <p>Nossos guias fáceis de seguir vão ajudá-lo a proteger suas informações pessoais na internet.</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <i class="fas fa-lock fa-3x"></i>
+                    <h3>Senhas Seguras</h3>
+                    <p>Aprenda a criar e gerenciar senhas fortes para manter suas contas seguras.</p>
+                    <a href="pages/password-security.html" class="button">Saiba Mais</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-envelope-open-text fa-3x"></i>
+                    <h3>Segurança de Email</h3>
+                    <p>Descubra como identificar emails de phishing e manter sua caixa de entrada protegida.</p>
+                    <a href="pages/email-safety.html" class="button">Saiba Mais</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt fa-3x"></i>
+                    <h3>Evitando Golpes</h3>
+                    <p>Reconheça golpes comuns online e aprenda a se proteger.</p>
+                    <a href="pages/online-scams.html" class="button">Saiba Mais</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="pages/accessibility.html">Acessibilidade</a> | <a href="pages/sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <!-- Script original de acessibilidade -->
+    <script src="js/accessibility.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Nova barra de acessibilidade -->
+    <script src="js/accessibility-bar.js"></script>
+    
+    <!-- Script para melhorias de UX -->
+    <script src="js/enhanced-ux.js"></script>
+    
+    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
+    <div class="sr-only" aria-live="polite">
+        Pressione Alt+A para abrir o menu de acessibilidade.
+    </div>
+</body>
+</html>

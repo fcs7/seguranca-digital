@@ -1,0 +1,560 @@
+/* Base Styles with Accessibility Focus */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --link-color: #2980b9;
+    --link-hover-color: #1c5d8c;
+    --success-color: #27ae60;
+    --warning-color: #e67e22;
+    --danger-color: #c0392b;
+    --font-size-base: 18px;
+    --line-height: 1.6;
+    --input-border: #ccc;
+    --input-focus-border: #3498db;
+    --input-background: #fff;
+    --input-focus-background: #f0f8ff;
+    --input-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* High Contrast Mode Variables */
+.high-contrast {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --background-color: #000;
+    --text-color: #fff;
+    --link-color: #ffff00;
+    --link-hover-color: #ffa500;
+    --success-color: #00ff00;
+    --warning-color: #ffff00;
+    --danger-color: #ff0000;
+    --input-border: #fff;
+    --input-focus-border: #ffff00;
+    --input-background: #000;
+    --input-focus-background: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-base);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: var(--line-height);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography with Accessibility Focus */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover, a:focus {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+header button {
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header button:hover {
+    background-color: #f0f0f0;
+}
+
+header button:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Navigation Styles - Highly Visible and Accessible */
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav a:focus {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 0;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+/* Feature Cards */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card i {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--link-hover-color);
+    color: white;
+    text-decoration: none;
+}
+
+/* Contact Form Styles - Enhanced for better user experience */
+.contact-form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--input-focus-border);
+    background-color: var(--input-focus-background);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-content: center;
+}
+
+.submit-button:hover {
+    background-color: var(--link-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Contact columns layout */
+.contact-columns {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contact-info, .contact-form-section {
+    padding: 1rem;
+}
+
+/* Contact list styling */
+.contact-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.contact-list i {
+    color: var(--secondary-color);
+    min-width: 20px;
+    text-align: center;
+}
+
+/* FAQ styling */
+.faq-section {
+    margin-bottom: 1.5rem;
+}
+
+details {
+    margin-bottom: 0.75rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+summary {
+    padding: 0.75rem;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    padding: 0.75rem;
+    background-color: white;
+}
+
+.faq-answer p {
+    margin-bottom: 0.75rem;
+}
+
+.faq-answer ul,
+.faq-answer ol {
+    padding-left: 1.5rem;
+}
+
+/* Emergency box styling */
+.emergency-box {
+    background-color: #fff3f3;
+    border: 2px solid var(--danger-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.emergency-box h3 {
+    color: var(--danger-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.75rem;
+}
+
+.emergency-box p {
+    margin-bottom: 0.75rem;
+}
+
+.emergency-box ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.emergency-box li {
+    margin-bottom: 0.5rem;
+}
+
+.emergency-box i {
+    color: var(--danger-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .contact-columns {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px; /* Slightly smaller base font on mobile */
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group label {
+        font-size: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1.25rem;
+    }
+    
+    .contact-info, .contact-form-section {
+        padding: 0.5rem;
+    }
+    
+    .emergency-box {
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    
+    .emergency-box {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Skip Link for Keyboard Navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--secondary-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}

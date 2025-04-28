@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade - Segurança Digital</title>
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Estilos para UI moderna -->
+    <link rel="stylesheet" href="../css/modern-ui.css">
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
+                <i class="fas fa-adjust"></i> Contraste
+            </button>
+            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
+                <i class="fas fa-search-plus"></i> Texto Maior
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Declaração de Acessibilidade</h2>
+                <p>Estamos comprometidos em tornar este site acessível para todos os usuários, independentemente de suas habilidades ou tecnologias.</p>
+            </section>
+
+            <section class="content">
+                <h3><i class="fas fa-universal-access"></i> Nosso Compromisso com a Acessibilidade</h3>
+                <p>O site "Segurança Digital" foi projetado e desenvolvido para ser acessível a todos, com atenção especial às necessidades de diversos usuários e pessoas com deficiências. Nosso objetivo é garantir que todas as informações e funcionalidades sejam acessíveis, independentemente da tecnologia ou capacidade do usuário.</p>
+
+                <h3><i class="fas fa-list-alt"></i> Recursos de Acessibilidade</h3>
+                <p>Este site inclui os seguintes recursos de acessibilidade:</p>
+
+                <div class="accessibility-features">
+                    <div class="feature-item">
+                        <h4><i class="fas fa-text-height"></i> Tamanho de Fonte Ajustável</h4>
+                        <p>O texto base do site é grande (18px) para facilitar a leitura, e você pode aumentá-lo ainda mais usando o botão "Texto Maior" no cabeçalho ou pressionando Alt+F no teclado.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-adjust"></i> Modo de Alto Contraste</h4>
+                        <p>Você pode alternar para o modo de alto contraste clicando no botão "Contraste" no cabeçalho ou pressionando Alt+C no teclado. Isso aumenta o contraste entre o texto e o fundo para facilitar a leitura.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-keyboard"></i> Navegação por Teclado</h4>
+                        <p>Todas as funcionalidades do site podem ser acessadas usando apenas o teclado. Use a tecla Tab para navegar entre os elementos e Enter para ativar links e botões.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-arrow-right"></i> Link de Pular para Conteúdo</h4>
+                        <p>Um link "Pular para o conteúdo principal" aparece quando você começa a navegar com o teclado, permitindo que você pule o menu de navegação.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-heading"></i> Estrutura Semântica</h4>
+                        <p>Usamos títulos (H1-H6) de forma hierárquica e estruturada para facilitar a navegação com leitores de tela.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-file-alt"></i> Texto Alternativo para Imagens</h4>
+                        <p>Todas as imagens têm texto alternativo (alt) descritivo para usuários de leitores de tela.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-tablet-alt"></i> Design Responsivo</h4>
+                        <p>O site se adapta a diferentes tamanhos de tela, desde celulares até desktops, mantendo a facilidade de uso.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4><i class="fas fa-deaf"></i> Suporte para Leitor de Tela</h4>
+                        <p>O site é compatível com leitores de tela e inclui atributos ARIA para melhorar a experiência.</p>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-eye"></i> Dicas para Navegar com Acessibilidade</h3>
+                <ul>
+                    <li><strong>Aumentar o texto no navegador:</strong> Use Ctrl+ (Windows/Linux) ou Cmd+ (Mac) para aumentar o zoom da página</li>
+                    <li><strong>Navegação por teclado:</strong> Use Tab para navegar entre links e controles, Enter para ativar</li>
+                    <li><strong>Leitores de tela:</strong> Recomendamos NVDA (Windows, gratuito) ou VoiceOver (Mac, integrado)</li>
+                    <li><strong>Configurações do navegador:</strong> A maioria dos navegadores modernos tem configurações de acessibilidade que podem ser ajustadas</li>
+                </ul>
+
+                <h3><i class="fas fa-bug"></i> Problemas de Acessibilidade</h3>
+                <p>Estamos sempre trabalhando para melhorar a acessibilidade deste site. Se você encontrar algum problema ou tiver sugestões para melhorar a acessibilidade, por favor entre em contato conosco através da nossa <a href="contact.html">página de contato</a>.</p>
+
+                <h3><i class="fas fa-certificate"></i> Conformidade com Padrões</h3>
+                <p>Este site foi desenvolvido visando a conformidade com as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1, nível AA.</p>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-hands-helping"></i> Precisa de Ajuda Adicional?</h4>
+                    <p>Se você precisar de assistência para acessar qualquer parte deste site ou tiver dúvidas sobre nossos recursos de acessibilidade, entre em contato conosco:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:acessibilidade@segurancaparaidosos.org.br">acessibilidade@segurancaparaidosos.org.br</a></li>
+                        <li>Telefone: (11) 0800-123-4567</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- Nova barra de acessibilidade -->
+    <script src="../js/accessibility-bar.js"></script>
+    
+    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
+    <div class="sr-only" aria-live="polite">
+        Pressione Alt+A para abrir o menu de acessibilidade.
+    </div>
+    <!-- Script para melhorias de UX -->
+    <script src="../js/enhanced-ux.js"></script>
+</body>
+</html>

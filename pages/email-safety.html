@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de Email - Segurança Digital</title>
+    <!-- Google Fonts - Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Estilos para UI moderna -->
+    <link rel="stylesheet" href="../css/modern-ui.css">
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
+                <i class="fas fa-adjust"></i> Contraste
+            </button>
+            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
+                <i class="fas fa-search-plus"></i> Texto Maior
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html" class="active"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Segurança de Email</h2>
+                <p>Email é uma das formas mais comuns que golpistas usam para tentar roubar suas informações ou dinheiro. Aprender a identificar emails suspeitos é uma habilidade de segurança digital essencial.</p>
+            </section>
+
+            <section class="content">
+                <h3><i class="fas fa-exclamation-triangle"></i> Reconhecendo Emails de Phishing</h3>
+                <p>Emails de phishing são mensagens fraudulentas projetadas para enganá-lo a revelar informações pessoais ou instalar software malicioso. Veja como identificá-los:</p>
+                
+                <div class="warning-signs">
+                    <h4>Sinais de alerta em emails de phishing:</h4>
+                    <ul>
+                        <li><strong>Linguagem urgente ou ameaçadora</strong> - Afirma que sua conta será fechada, você será multado ou está com problemas legais</li>
+                        <li><strong>Solicitações de informações pessoais</strong> - Empresas legítimas raramente pedem informações sensíveis por email</li>
+                        <li><strong>Endereço de remetente suspeito</strong> - O endereço de email não corresponde ao domínio oficial da empresa</li>
+                        <li><strong>Saudação genérica</strong> - "Caro Cliente" em vez do seu nome</li>
+                        <li><strong>Erros de ortografia e gramática</strong> - Empresas profissionais revisam suas comunicações</li>
+                        <li><strong>Links ou anexos suspeitos</strong> - Passe o mouse sobre links para ver para onde realmente vão</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-shield-alt"></i> Protegendo Sua Conta de Email</h3>
+                <ol>
+                    <li><strong>Use uma senha forte e única</strong> para sua conta de email</li>
+                    <li><strong>Ative a autenticação de dois fatores</strong> para segurança adicional</li>
+                    <li><strong>Tenha cuidado com Wi-Fi público</strong> ao verificar emails</li>
+                    <li><strong>Saia da sua conta</strong> ao usar computadores compartilhados</li>
+                    <li><strong>Atualize seu aplicativo de email</strong> regularmente</li>
+                    <li><strong>Considere usar um endereço de email separado</strong> para compras online ou newsletters</li>
+                </ol>
+
+                <h3><i class="fas fa-trash-alt"></i> O Que Fazer com Emails Suspeitos</h3>
+                <ul>
+                    <li><strong>Não clique em links ou baixe anexos</strong> de remetentes desconhecidos</li>
+                    <li><strong>Não responda</strong> a emails suspeitos</li>
+                    <li><strong>Marque como spam</strong> usando o botão de spam do seu provedor de email</li>
+                    <li><strong>Exclua o email</strong> depois de marcá-lo como spam</li>
+                    <li><strong>Se tiver dúvidas sobre um email de uma empresa que você conhece</strong>, entre em contato com ela diretamente pelo site oficial ou telefone (não pelo email)</li>
+                </ul>
+
+                <div class="example-box">
+                    <h4>Exemplo de um Email de Phishing:</h4>
+                    <div class="phishing-example">
+                        <p><strong>De:</strong> seguranca@netf1ix.com (observe o "1" em vez de "l")</p>
+                        <p><strong>Assunto:</strong> URGENTE: Sua Conta Netflix Foi Suspensa</p>
+                        <p><strong>Mensagem:</strong></p>
+                        <p>Prezado Cliente,</p>
+                        <p>Lamentamos informar que sua conta Netflix foi temporariamente suspensa devido a um problema com suas informações de cobrança. Para evitar a interrupção do serviço, atualize seus dados de pagamento imediatamente clicando no link abaixo:</p>
+                        <p><a href="#" onclick="return false;">[Atualizar Informações de Pagamento]</a></p>
+                        <p>Se você não atualizar suas informações em 24 horas, sua conta será permanentemente excluída.</p>
+                        <p>Equipe de Suporte Netflix</p>
+                    </div>
+                    <p><strong>Por que isso é suspeito:</strong> Tom urgente, ameaça de exclusão da conta, endereço de remetente suspeito, pede para clicar em um link e não se dirige a você pelo nome.</p>
+                </div>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-lightbulb"></i> Dica de Segurança de Email</h4>
+                    <p>Em caso de dúvida, não clique! Se você receber um email que parece importante, mas suspeito, entre em contato com a empresa diretamente pelo site oficial ou número de telefone que você procurou (não pelo email).</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- Nova barra de acessibilidade -->
+    <script src="../js/accessibility-bar.js"></script>
+    
+    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
+    <div class="sr-only" aria-live="polite">
+        Pressione Alt+A para abrir o menu de acessibilidade.
+    </div>
+    <!-- Script para melhorias de UX -->
+    <script src="../js/enhanced-ux.js"></script>
+</body>
+</html>
