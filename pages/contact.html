@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda & Contato - Segurança Digital</title>
-    <!-- Google Fonts - Nunito -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Estilos para UI moderna -->
-    <link rel="stylesheet" href="../css/modern-ui.css">
-    <!-- Estilos para a barra de acessibilidade -->
-    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome para ícones reconhecíveis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos do site redesenhados -->
+    <link rel="stylesheet" href="../css/styles-new.css">
+    
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+
+    <!-- Script de tema que carrega imediatamente -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/theme-loader.js"></script>
+
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/accessibility-bar.js"></script>
+    <script src="../js/theme-manager.js"></script>
 </head>
 <body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
     <header>
         <div class="container">
             <h1>Segurança Digital</h1>
-            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
-                <i class="fas fa-adjust"></i> Contraste
-            </button>
-            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
-                <i class="fas fa-search-plus"></i> Texto Maior
-            </button>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
         </div>
     </header>
 
@@ -48,132 +65,175 @@
             </section>
 
             <section class="content">
-                <div class="contact-columns">
+                <div class="contact-grid">
                     <div class="contact-info">
-                        <h3><i class="fas fa-info-circle"></i> Informações de Contato</h3>
-                        <ul class="contact-list">
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>Email: <a href="mailto:contato@segurancadigital.org.br">contato@segurancadigital.org.br</a></span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span>Telefone: (11) 0800-123-4567 (gratuito)</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Horário de atendimento: Segunda a Sexta, 9h às 17h</span>
-                            </li>
-                        </ul>
+                        <div class="contact-card">
+                            <div class="card-header">
+                                <i class="fas fa-info-circle"></i>
+                                <h3>Informações de Contato</h3>
+                            </div>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Email:</strong>
+                                        <a href="mailto:contato@segurancadigital.org.br">contato@segurancadigital.org.br</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Telefone:</strong>
+                                        <span>(11) 0800-123-4567 (gratuito)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Horário de atendimento:</strong>
+                                        <span>Segunda a Sexta, 9h às 17h</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h3><i class="fas fa-exclamation-triangle"></i> Denunciar Golpes</h3>
-                        <p>Use nosso formulário para denunciar golpes online. Sua denúncia ajuda a proteger outras pessoas.</p>
-                        <p>Informações importantes para incluir:</p>
-                        <ul>
-                            <li>Como o golpe aconteceu (email, WhatsApp, ligação)</li>
-                            <li>Quais informações foram solicitadas</li>
-                            <li>Links ou números de telefone suspeitos</li>
-                        </ul>
+                        <div class="contact-card">
+                            <div class="card-header warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h3>Denunciar Golpes</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Use nosso formulário para denunciar golpes online. Sua denúncia ajuda a proteger outras pessoas.</p>
+                                <p>Informações importantes para incluir:</p>
+                                <ul class="checklist">
+                                    <li>Como o golpe aconteceu (email, WhatsApp, ligação)</li>
+                                    <li>Quais informações foram solicitadas</li>
+                                    <li>Links ou números de telefone suspeitos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="card-header">
+                                <i class="fas fa-question-circle"></i>
+                                <h3>Perguntas Frequentes</h3>
+                            </div>
+                            <div class="faq-section">
+                                <details class="faq-item">
+                                    <summary>O que fazer se suspeito que fui vítima de um golpe?</summary>
+                                    <div class="faq-answer">
+                                        <p>Se você acredita que foi vítima de um golpe online, siga estes passos:</p>
+                                        <ol>
+                                            <li>Entre em contato com seu banco imediatamente</li>
+                                            <li>Altere suas senhas comprometidas</li>
+                                            <li>Reporte às autoridades locais</li>
+                                            <li>Registre denúncia no Procon</li>
+                                            <li>Monitore suas contas bancárias</li>
+                                        </ol>
+                                    </div>
+                                </details>
 
-                        <h3><i class="fas fa-question-circle"></i> Perguntas Frequentes</h3>
-                        <div class="faq-section">
-                            <details>
-                                <summary>O que fazer se suspeito que fui vítima de um golpe?</summary>
-                                <div class="faq-answer">
-                                    <p>Se você acredita que foi vítima de um golpe online, siga estes passos:</p>
-                                    <ol>
-                                        <li>Entre em contato com seu banco imediatamente</li>
-                                        <li>Altere suas senhas comprometidas</li>
-                                        <li>Reporte às autoridades locais</li>
-                                        <li>Registre denúncia no Procon</li>
-                                        <li>Monitore suas contas bancárias</li>
-                                    </ol>
-                                </div>
-                            </details>
+                                <details class="faq-item">
+                                    <summary>Como ajudar um familiar a usar a internet com segurança?</summary>
+                                    <div class="faq-answer">
+                                        <p>Para ajudar um familiar:</p>
+                                        <ul>
+                                            <li>Configure proteções de segurança básicas</li>
+                                            <li>Ensine sobre senhas fortes</li>
+                                            <li>Explique sinais de golpes comuns</li>
+                                            <li>Incentive a perguntar antes de clicar</li>
+                                            <li>Compartilhe nossos guias de referência</li>
+                                        </ul>
+                                    </div>
+                                </details>
 
-                            <details>
-                                <summary>Como ajudar um familiar a usar a internet com segurança?</summary>
-                                <div class="faq-answer">
-                                    <p>Para ajudar um familiar:</p>
-                                    <ul>
-                                        <li>Configure proteções de segurança básicas</li>
-                                        <li>Ensine sobre senhas fortes</li>
-                                        <li>Explique sinais de golpes comuns</li>
-                                        <li>Incentive a perguntar antes de clicar</li>
-                                        <li>Compartilhe nossos guias de referência</li>
-                                    </ul>
-                                </div>
-                            </details>
-
-                            <details>
-                                <summary>Preciso de antivírus no meu celular?</summary>
-                                <div class="faq-answer">
-                                    <p>Para a maioria dos usuários:</p>
-                                    <ul>
-                                        <li>iPhones normalmente não precisam</li>
-                                        <li>Android pode se beneficiar de app de segurança</li>
-                                        <li>Mantenha seu dispositivo atualizado</li>
-                                        <li>Baixe apenas das lojas oficiais</li>
-                                    </ul>
-                                </div>
-                            </details>
+                                <details class="faq-item">
+                                    <summary>Preciso de antivírus no meu celular?</summary>
+                                    <div class="faq-answer">
+                                        <p>Para a maioria dos usuários:</p>
+                                        <ul>
+                                            <li>iPhones normalmente não precisam</li>
+                                            <li>Android pode se beneficiar de app de segurança</li>
+                                            <li>Mantenha seu dispositivo atualizado</li>
+                                            <li>Baixe apenas das lojas oficiais</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-form-section">
-                        <h3><i class="fas fa-paper-plane"></i> Envie uma Mensagem</h3>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Nome:</label>
-                                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    <div class="form-container">
+                        <div class="contact-form-card">
+                            <div class="card-header">
+                                <i class="fas fa-paper-plane"></i>
+                                <h3>Envie uma Mensagem</h3>
                             </div>
+                            
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Nome:</label>
+                                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
-                            </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="phone">Telefone (opcional):</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
-                            </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone (opcional):</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="subject">Assunto:</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Selecione um assunto</option>
-                                    <option value="question">Dúvida sobre segurança</option>
-                                    <option value="report">Reportar um golpe</option>
-                                    <option value="feedback">Comentário ou sugestão</option>
-                                    <option value="presentation">Solicitar apresentação</option>
-                                    <option value="other">Outro assunto</option>
-                                </select>
-                            </div>
+                                <div class="form-group">
+                                    <label for="subject">Assunto:</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="question">Dúvida sobre segurança</option>
+                                        <option value="report">Reportar um golpe</option>
+                                        <option value="feedback">Comentário ou sugestão</option>
+                                        <option value="presentation">Solicitar apresentação</option>
+                                        <option value="other">Outro assunto</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="message">Mensagem:</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Descreva sua mensagem com detalhes..." required></textarea>
-                            </div>
+                                <div class="form-group">
+                                    <label for="message">Mensagem:</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Descreva sua mensagem com detalhes..." required></textarea>
+                                </div>
 
-                            <div class="form-group">
-                                <button type="submit" class="submit-button">
-                                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                                </button>
-                            </div>
-                        </form>
-                        <div id="form-message" class="form-message"></div>
+                                <div class="form-group">
+                                    <button type="submit" class="button submit-button">
+                                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="form-message" class="form-message"></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="emergency-box">
-                    <h3><i class="fas fa-exclamation-circle"></i> Em caso de emergência</h3>
-                    <p>Se você acredita que está sendo vítima de um crime digital neste momento:</p>
-                    <ul>
-                        <li>Desligue seu dispositivo ou desconecte-o da internet</li>
-                        <li>Entre em contato com seu banco imediatamente se informações financeiras estiverem envolvidas</li>
-                        <li>Ligue para o serviço de Polícia Civil mais próximo</li>
-                        <li>Contate a Delegacia de Crimes Cibernéticos: (11) 3311-3700</li>
-                    </ul>
+                    <div class="emergency-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Em caso de emergência</h3>
+                    </div>
+                    <div class="emergency-content">
+                        <p>Se você acredita que está sendo vítima de um crime digital neste momento:</p>
+                        <ul>
+                            <li>Desligue seu dispositivo ou desconecte-o da internet</li>
+                            <li>Entre em contato com seu banco imediatamente se informações financeiras estiverem envolvidas</li>
+                            <li>Ligue para o serviço de Polícia Civil mais próximo</li>
+                            <li>Contate a Delegacia de Crimes Cibernéticos: <strong>(11) 3311-3700</strong></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -186,34 +246,404 @@
         </div>
     </footer>
 
-    <script src="../js/accessibility.js"></script>
-    <script src="../js/main.js"></script>
-    <script>
-        // Script simples para manipular o envio do formulário
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Em um site real, aqui você enviaria os dados para um servidor
-            // Este é apenas um exemplo de feedback visual
-            
-            const formMessage = document.getElementById('form-message');
-            formMessage.innerHTML = '<div class="success-message"><i class="fas fa-check-circle"></i> Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.</div>';
-            
-            // Limpar o formulário
-            this.reset();
-            
-            // Rolar para a mensagem
-            formMessage.scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
-    <!-- Nova barra de acessibilidade -->
-    <script src="../js/accessibility-bar.js"></script>
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
     
-    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
-    <div class="sr-only" aria-live="polite">
-        Pressione Alt+A para abrir o menu de acessibilidade.
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
     </div>
-    <!-- Script para melhorias de UX -->
-    <script src="../js/enhanced-ux.js"></script>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de contato */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        /* Layout de grid para as seções de contato */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        /* Estilo de cartões para a seção de contato e informações */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        
+        .contact-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-lg);
+            background-color: rgba(0, 107, 184, 0.05);
+            border-bottom: 1px solid rgba(0, 107, 184, 0.1);
+        }
+        
+        .card-header i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .card-header h3 {
+            color: var(--text-color);
+            margin: 0;
+            font-size: 1.35rem;
+        }
+        
+        .card-header.warning {
+            background-color: rgba(252, 185, 65, 0.05);
+            border-bottom: 1px solid rgba(252, 185, 65, 0.1);
+        }
+        
+        .card-header.warning i {
+            color: var(--warning-color);
+        }
+        
+        .card-content {
+            padding: var(--spacing-lg);
+        }
+        
+        /* Lista de contatos */
+        .contact-list {
+            list-style-type: none;
+            padding: var(--spacing-md) var(--spacing-lg);
+            margin: 0;
+        }
+        
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .contact-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 107, 184, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-details strong {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-color);
+        }
+        
+        /* Estilos para a lista de verificação */
+        .checklist {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .checklist li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+        
+        .checklist li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--success-color);
+        }
+        
+        /* Estilos para FAQs */
+        .faq-section {
+            padding: var(--spacing-md) var(--spacing-lg);
+        }
+        
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: var(--spacing-md);
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .faq-item summary {
+            cursor: pointer;
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-color);
+            padding: var(--spacing-sm) 0;
+            position: relative;
+            transition: var(--transition-fast);
+        }
+        
+        .faq-item summary:hover {
+            color: var(--primary-color);
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '\f078';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item[open] summary::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .faq-answer {
+            margin-top: var(--spacing-sm);
+            padding-left: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+        
+        .faq-answer p {
+            margin-top: 0;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .faq-answer ul, .faq-answer ol {
+            margin-top: 0;
+            padding-left: var(--spacing-lg);
+        }
+        
+        .faq-answer li {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Estilos para o formulário de contato */
+        .form-container {
+            height: 100%;
+        }
+        
+        .contact-form-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-form {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-color);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 1px solid var(--input-border);
+            border-radius: var(--border-radius);
+            background-color: var(--input-background);
+            font-size: 1rem;
+            color: var(--text-color);
+            transition: var(--transition-fast);
+            font-family: var(--font-family);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--input-focus-border);
+            background-color: var(--input-focus-background);
+            box-shadow: 0 0 0 3px var(--input-shadow);
+            outline: none;
+        }
+        
+        .submit-button {
+            width: 100%;
+        }
+        
+        .form-message {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+        }
+        
+        .success-message {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md);
+            background-color: rgba(55, 177, 90, 0.1);
+            border-radius: var(--border-radius);
+            color: var(--success-color);
+            border-left: 3px solid var(--success-color);
+        }
+        
+        .success-message i {
+            font-size: 1.25rem;
+        }
+        
+        /* Estilos para a caixa de emergência */
+        .emergency-box {
+            background-color: rgba(231, 69, 86, 0.05);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(231, 69, 86, 0.1);
+            overflow: hidden;
+        }
+        
+        .emergency-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-lg);
+            background-color: rgba(231, 69, 86, 0.1);
+            border-bottom: 1px solid rgba(231, 69, 86, 0.1);
+        }
+        
+        .emergency-header i {
+            color: var(--danger-color);
+            font-size: 1.25rem;
+        }
+        
+        .emergency-header h3 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .emergency-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .emergency-content p {
+            margin-top: 0;
+            margin-bottom: var(--spacing-md);
+            font-weight: var(--font-weight-medium);
+        }
+        
+        .emergency-content ul {
+            margin: 0;
+            padding-left: var(--spacing-lg);
+        }
+        
+        .emergency-content li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+        
+        .emergency-content strong {
+            color: var(--danger-color);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        /* Responsividade */
+        @media screen and (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .form-container {
+                order: -1;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .contact-list li {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .contact-icon {
+                margin-bottom: var(--spacing-xs);
+            }
+        }
+    </style>
 </body>
 </html>

@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos - Segurança Digital para Idosos</title>
-    <!-- Google Fonts - Nunito -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Estilos para UI moderna -->
-    <link rel="stylesheet" href="../css/modern-ui.css">
-    <!-- Estilos para a barra de acessibilidade -->
-    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    <title>Recursos - Segurança Digital</title>
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome para ícones reconhecíveis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos do site redesenhados -->
+    <link rel="stylesheet" href="../css/styles-new.css">
+    
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+
+    <!-- Script de tema que carrega imediatamente -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/theme-loader.js"></script>
+
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/accessibility-bar.js"></script>
+    <script src="../js/theme-manager.js"></script>
 </head>
 <body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
     <header>
         <div class="container">
-            <h1>Segurança Digital para Idosos</h1>
-            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
-                <i class="fas fa-adjust"></i> Contraste
-            </button>
-            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
-                <i class="fas fa-search-plus"></i> Texto Maior
-            </button>
+            <h1>Segurança Digital</h1>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
         </div>
     </header>
 
@@ -48,75 +65,192 @@
             </section>
 
             <section class="content">
-                <h3><i class="fas fa-shield-alt"></i> Ferramentas Recomendadas</h3>
-                <div class="resource-cards">
+                <div class="section-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Ferramentas Recomendadas</h3>
+                </div>
+                
+                <div class="resources-grid">
                     <div class="resource-card">
-                        <h4>Gerenciadores de Senhas</h4>
-                        <ul>
-                            <li><a href="https://www.lastpass.com/pt" target="_blank">LastPass</a> - Versão gratuita disponível</li>
-                            <li><a href="https://1password.com/pt" target="_blank">1Password</a> - Interface simples e intuitiva</li>
-                            <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a> - Opção gratuita e de código aberto</li>
-                        </ul>
+                        <div class="resource-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Gerenciadores de Senhas</h4>
+                            <p>Ferramentas que armazenam suas senhas de forma segura, para que você não precise memorizá-las.</p>
+                            <ul>
+                                <li><a href="https://www.lastpass.com/pt" target="_blank">LastPass</a> - Versão gratuita disponível</li>
+                                <li><a href="https://1password.com/pt" target="_blank">1Password</a> - Interface simples e intuitiva</li>
+                                <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a> - Opção gratuita e de código aberto</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="resource-card">
-                        <h4>Antivírus</h4>
-                        <ul>
-                            <li><a href="https://www.avg.com/pt-br/" target="_blank">AVG</a> - Proteção básica gratuita</li>
-                            <li><a href="https://www.avast.com/pt-br/" target="_blank">Avast</a> - Antivírus gratuito</li>
-                            <li><a href="https://www.kaspersky.com.br/" target="_blank">Kaspersky</a> - Solução completa de segurança</li>
-                        </ul>
+                        <div class="resource-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Antivírus</h4>
+                            <p>Programas que protegem seu computador contra vírus e outros softwares maliciosos.</p>
+                            <ul>
+                                <li><a href="https://www.avg.com/pt-br/" target="_blank">AVG</a> - Proteção básica gratuita</li>
+                                <li><a href="https://www.avast.com/pt-br/" target="_blank">Avast</a> - Antivírus gratuito</li>
+                                <li><a href="https://www.kaspersky.com.br/" target="_blank">Kaspersky</a> - Solução completa de segurança</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="resource-card">
-                        <h4>Navegação Segura</h4>
-                        <ul>
-                            <li><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a> - Com verificação de segurança</li>
-                            <li><a href="https://www.mozilla.org/pt-BR/firefox/" target="_blank">Mozilla Firefox</a> - Com proteção contra rastreamento</li>
-                            <li><a href="https://brave.com/pt/" target="_blank">Brave</a> - Navegador focado em privacidade</li>
-                        </ul>
+                        <div class="resource-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Navegação Segura</h4>
+                            <p>Navegadores de internet que oferecem recursos de segurança e privacidade.</p>
+                            <ul>
+                                <li><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a> - Com verificação de segurança</li>
+                                <li><a href="https://www.mozilla.org/pt-BR/firefox/" target="_blank">Mozilla Firefox</a> - Com proteção contra rastreamento</li>
+                                <li><a href="https://brave.com/pt/" target="_blank">Brave</a> - Navegador focado em privacidade</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <h3><i class="fas fa-graduation-cap"></i> Materiais Educativos</h3>
-                <div class="resource-links">
-                    <ul>
-                        <li><a href="https://new.safernet.org.br/" target="_blank">SaferNet Brasil</a> - Recursos sobre segurança digital</li>
-                        <li><a href="https://www.gov.br/defesa/pt-br/assuntos/cyber" target="_blank">Centro de Defesa Cibernética do Brasil</a> - Informações sobre segurança cibernética</li>
-                        <li><a href="https://www.consumidor.gov.br/pages/principal/?1536094267756" target="_blank">Consumidor.gov.br</a> - Recursos para consumidores sobre fraudes digitais</li>
-                        <li><a href="https://www.bcb.gov.br/estabilidadefinanceira/segurancapix" target="_blank">Banco Central - Segurança no PIX</a> - Dicas de segurança para transações bancárias digitais</li>
+                
+                <div class="section-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Materiais Educativos</h3>
+                </div>
+                
+                <div class="card education-resources">
+                    <ul class="resource-links">
+                        <li>
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="https://new.safernet.org.br/" target="_blank">SaferNet Brasil</a> 
+                            <span class="resource-description">Portal com recursos completos sobre segurança digital e cidadania online</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="https://www.gov.br/defesa/pt-br/assuntos/cyber" target="_blank">Centro de Defesa Cibernética do Brasil</a> 
+                            <span class="resource-description">Informações oficiais sobre segurança cibernética no Brasil</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="https://www.consumidor.gov.br/pages/principal/?1536094267756" target="_blank">Consumidor.gov.br</a> 
+                            <span class="resource-description">Recursos para consumidores sobre fraudes digitais e como se proteger</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="https://www.bcb.gov.br/estabilidadefinanceira/segurancapix" target="_blank">Banco Central - Segurança no PIX</a> 
+                            <span class="resource-description">Dicas oficiais de segurança para transações bancárias digitais</span>
+                        </li>
                     </ul>
                 </div>
-
-                <h3><i class="fas fa-video"></i> Vídeos Educativos</h3>
-                <div class="video-resources">
+                
+                <div class="section-header">
+                    <i class="fas fa-video"></i>
+                    <h3>Vídeos Educativos</h3>
+                </div>
+                
+                <div class="card video-resources">
                     <p>Confira estes canais do YouTube com tutoriais sobre segurança digital:</p>
-                    <ul>
-                        <li><a href="https://www.youtube.com/user/CanalTech" target="_blank">Canal Tech</a> - Dicas de tecnologia e segurança digital</li>
-                        <li><a href="https://www.youtube.com/c/CodigoFonteTV" target="_blank">Código Fonte TV</a> - Explicações sobre tecnologia e segurança</li>
-                        <li><a href="https://www.youtube.com/user/manualdousuario" target="_blank">Manual do Usuário</a> - Vídeos sobre tecnologia para usuários iniciantes</li>
+                    <ul class="channel-list">
+                        <li>
+                            <div class="channel-info">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://www.youtube.com/user/CanalTech" target="_blank">Canal Tech</a>
+                            </div>
+                            <p>Dicas de tecnologia e segurança digital em linguagem acessível</p>
+                        </li>
+                        <li>
+                            <div class="channel-info">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://www.youtube.com/c/CodigoFonteTV" target="_blank">Código Fonte TV</a>
+                            </div>
+                            <p>Explicações detalhadas sobre tecnologia e segurança online</p>
+                        </li>
+                        <li>
+                            <div class="channel-info">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://www.youtube.com/user/manualdousuario" target="_blank">Manual do Usuário</a>
+                            </div>
+                            <p>Vídeos sobre tecnologia especialmente para usuários iniciantes</p>
+                        </li>
                     </ul>
                 </div>
 
-                <h3><i class="fas fa-exclamation-triangle"></i> Onde Denunciar Golpes</h3>
-                <div class="reporting-resources">
-                    <ul>
-                        <li><a href="https://new.safernet.org.br/denuncie" target="_blank">SaferNet</a> - Para denunciar crimes cibernéticos</li>
-                        <li><a href="https://www.gov.br/pf/pt-br/servicos-pf" target="_blank">Polícia Federal</a> - Para crimes cibernéticos de maior gravidade</li>
-                        <li><a href="https://www.consumidor.gov.br/" target="_blank">Consumidor.gov.br</a> - Para denunciar fraudes ao consumidor</li>
-                        <li><a href="https://procon.sp.gov.br/" target="_blank">Procon</a> - Para problemas de consumo e golpes relacionados</li>
+                <div class="section-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Onde Denunciar Golpes</h3>
+                </div>
+                
+                <div class="card report-resources">
+                    <ul class="reporting-links">
+                        <li>
+                            <div class="report-icon warning">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="report-info">
+                                <h4><a href="https://new.safernet.org.br/denuncie" target="_blank">SaferNet</a></h4>
+                                <p>Canal especializado para denunciar crimes cibernéticos como fraudes, golpes e conteúdos inapropriados</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report-icon warning">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="report-info">
+                                <h4><a href="https://www.gov.br/pf/pt-br/servicos-pf" target="_blank">Polícia Federal</a></h4>
+                                <p>Para denunciar crimes cibernéticos de maior gravidade, incluindo golpes financeiros de grande porte</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report-icon warning">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="report-info">
+                                <h4><a href="https://www.consumidor.gov.br/" target="_blank">Consumidor.gov.br</a></h4>
+                                <p>Plataforma oficial para registrar denúncias de fraudes ao consumidor e buscar solução de problemas</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="report-icon warning">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <div class="report-info">
+                                <h4><a href="https://procon.sp.gov.br/" target="_blank">Procon</a></h4>
+                                <p>Órgão de proteção ao consumidor onde você pode denunciar fraudes e golpes relacionados a compras</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="tip-box">
-                    <h4><i class="fas fa-print"></i> Versões para Imprimir</h4>
+                <div class="card printable-resources">
+                    <div class="card-header">
+                        <i class="fas fa-print"></i>
+                        <h4>Versões para Imprimir</h4>
+                    </div>
                     <p>Todos os nossos guias estão disponíveis em versões para imprimir, perfeitas para compartilhar com amigos ou familiares que não têm acesso à internet:</p>
-                    <ul>
-                        <li><a href="#" onclick="window.print(); return false;">Imprimir esta página</a></li>
-                        <li><a href="../resources/guia-senhas-seguras.pdf">Guia de Senhas Seguras (PDF)</a></li>
-                        <li><a href="../resources/guia-seguranca-email.pdf">Guia de Segurança de Email (PDF)</a></li>
-                        <li><a href="../resources/guia-evitando-golpes.pdf">Guia para Evitar Golpes Online (PDF)</a></li>
-                    </ul>
+                    <div class="print-options">
+                        <a href="#" onclick="window.print(); return false;" class="print-button">
+                            <i class="fas fa-print"></i>
+                            Imprimir esta página
+                        </a>
+                        <div class="pdf-links">
+                            <a href="../resources/guia-senhas-seguras.pdf" class="pdf-link">
+                                <i class="fas fa-file-pdf"></i>
+                                Guia de Senhas Seguras (PDF)
+                            </a>
+                            <a href="../resources/guia-seguranca-email.pdf" class="pdf-link">
+                                <i class="fas fa-file-pdf"></i>
+                                Guia de Segurança de Email (PDF)
+                            </a>
+                            <a href="../resources/guia-evitando-golpes.pdf" class="pdf-link">
+                                <i class="fas fa-file-pdf"></i>
+                                Guia para Evitar Golpes Online (PDF)
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -124,21 +258,388 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Segurança Digital para Idosos</p>
+            <p>&copy; 2025 Segurança Digital</p>
             <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
         </div>
     </footer>
 
-    <script src="../js/accessibility.js"></script>
-    <script src="../js/main.js"></script>
-    <!-- Nova barra de acessibilidade -->
-    <script src="../js/accessibility-bar.js"></script>
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
     
-    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
-    <div class="sr-only" aria-live="polite">
-        Pressione Alt+A para abrir o menu de acessibilidade.
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
     </div>
-    <!-- Script para melhorias de UX -->
-    <script src="../js/enhanced-ux.js"></script>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de recursos */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-header i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        
+        .section-header h3 {
+            color: var(--text-color);
+            margin: 0;
+        }
+        
+        /* Cards de recursos */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .resource-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: var(--transition-fast);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-color);
+        }
+        
+        .resource-icon {
+            background-color: rgba(0, 107, 184, 0.1);
+            padding: var(--spacing-md) 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .resource-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .resource-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+        }
+        
+        .resource-content h4 {
+            margin-top: 0;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .resource-content p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+        
+        .resource-content ul {
+            margin: 0;
+            padding-left: var(--spacing-lg);
+            color: var(--text-secondary);
+        }
+        
+        .resource-content li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* Card padrão */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* Materiais educativos */
+        .education-resources .resource-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .education-resources li {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+        
+        .education-resources li:last-child {
+            border-bottom: none;
+        }
+        
+        .education-resources i {
+            color: var(--link-color);
+            margin-top: 4px;
+        }
+        
+        .education-resources a {
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .resource-description {
+            display: block;
+            color: var(--text-secondary);
+            margin-top: var(--spacing-xs);
+            font-size: 0.95rem;
+        }
+        
+        /* Vídeos educativos */
+        .channel-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .channel-list li {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .channel-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .channel-info {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .channel-info i {
+            color: #FF0000; /* Cor do YouTube */
+            font-size: 1.2rem;
+        }
+        
+        .channel-info a {
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .channel-list p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* Denúncias */
+        .reporting-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .reporting-links li {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+        }
+        
+        .reporting-links li:last-child {
+            border-bottom: none;
+        }
+        
+        .report-icon {
+            background-color: rgba(0, 107, 184, 0.1);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .report-icon i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .report-icon.warning {
+            background-color: rgba(252, 185, 65, 0.1);
+        }
+        
+        .report-icon.warning i {
+            color: var(--warning-color);
+        }
+        
+        .report-info {
+            flex-grow: 1;
+        }
+        
+        .report-info h4 {
+            margin-top: 0;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .report-info p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Versões para imprimir */
+        .printable-resources {
+            background-color: rgba(78, 174, 189, 0.05);
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .card-header i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+        
+        .card-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .print-options {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .print-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            background-color: var(--secondary-color);
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--button-radius);
+            font-weight: var(--font-weight-medium);
+            width: fit-content;
+            transition: var(--transition-fast);
+        }
+        
+        .print-button:hover, .print-button:focus {
+            background-color: #3A97A3;
+            color: white;
+            text-decoration: none;
+            border-bottom: none;
+            transform: translateY(-2px);
+        }
+        
+        .pdf-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+        
+        .pdf-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--button-radius);
+            border: 1px solid var(--border-color);
+            font-weight: var(--font-weight-medium);
+            transition: var(--transition-fast);
+        }
+        
+        .pdf-link:hover, .pdf-link:focus {
+            background-color: rgba(0, 107, 184, 0.05);
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+        
+        .pdf-link i {
+            color: #E74556;
+        }
+        
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .pdf-links {
+                flex-direction: column;
+            }
+            
+            .reporting-links li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .report-icon {
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+    </style>
 </body>
 </html>

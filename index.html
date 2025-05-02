@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segurança Digital</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Estilos para UI moderna -->
-    <link rel="stylesheet" href="css/modern-ui.css">
-    <!-- Estilos para a barra de acessibilidade -->
-    <link rel="stylesheet" href="css/accessibility-bar.css">
-    <!-- Google Fonts - Nunito -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome para ícones reconhecíveis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos do site redesenhados -->
+    <link rel="stylesheet" href="css/styles-new.css">
+    
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="css/accessibility-bar.css">
+    
+    <!-- Script de tema que carrega imediatamente -->
+    <script src="js/cookie-utils.js"></script>
+    <script src="js/theme-loader.js"></script>
+    
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="js/cookie-consent.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/accessibility-bar.js"></script>
+    <script src="js/theme-manager.js"></script>
 </head>
 <body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
     <header>
         <div class="container">
             <h1>Segurança Digital</h1>
-            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
-                <i class="fas fa-adjust"></i> Contraste
-            </button>
-            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
-                <i class="fas fa-search-plus"></i> Texto Maior
-            </button>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
         </div>
     </header>
 
@@ -40,31 +57,30 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <div class="container">
             <section class="intro">
                 <h2>Bem-vindo à Segurança Digital</h2>
-                <p>Este site foi criado para ajudar pessoas a navegar pelo mundo digital com segurança.</p>
-                <p>Nossos guias fáceis de seguir vão ajudá-lo a proteger suas informações pessoais na internet.</p>
+                <p>Este site foi criado para ajudar pessoas a navegar pelo mundo digital com segurança. Nossos guias fáceis de seguir vão ajudá-lo a proteger suas informações pessoais na internet.</p>
             </section>
 
             <section class="features">
                 <div class="feature-card">
-                    <i class="fas fa-lock fa-3x"></i>
+                    <i class="fas fa-lock"></i>
                     <h3>Senhas Seguras</h3>
                     <p>Aprenda a criar e gerenciar senhas fortes para manter suas contas seguras.</p>
                     <a href="pages/password-security.html" class="button">Saiba Mais</a>
                 </div>
 
                 <div class="feature-card">
-                    <i class="fas fa-envelope-open-text fa-3x"></i>
+                    <i class="fas fa-envelope-open-text"></i>
                     <h3>Segurança de Email</h3>
                     <p>Descubra como identificar emails de phishing e manter sua caixa de entrada protegida.</p>
                     <a href="pages/email-safety.html" class="button">Saiba Mais</a>
                 </div>
 
                 <div class="feature-card">
-                    <i class="fas fa-shield-alt fa-3x"></i>
+                    <i class="fas fa-shield-alt"></i>
                     <h3>Evitando Golpes</h3>
                     <p>Reconheça golpes comuns online e aprenda a se proteger.</p>
                     <a href="pages/online-scams.html" class="button">Saiba Mais</a>
@@ -80,19 +96,45 @@
         </div>
     </footer>
 
-    <!-- Script original de acessibilidade -->
-    <script src="js/accessibility.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
     
-    <!-- Nova barra de acessibilidade -->
-    <script src="js/accessibility-bar.js"></script>
-    
-    <!-- Script para melhorias de UX -->
-    <script src="js/enhanced-ux.js"></script>
-    
-    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
-    <div class="sr-only" aria-live="polite">
-        Pressione Alt+A para abrir o menu de acessibilidade.
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
     </div>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
 </body>
 </html>

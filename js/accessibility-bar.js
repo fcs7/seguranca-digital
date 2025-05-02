@@ -7,6 +7,11 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Verificar se os utilitários de cookie estão disponíveis
+    if (typeof setCookie !== 'function') {
+        console.error('Cookie utilities not found. Make sure cookie-utils.js is loaded first.');
+    }
+    
     // Criar o botão de acessibilidade e o menu
     createAccessibilityBar();
     
@@ -81,11 +86,11 @@ function createAccessibilityBar() {
  */
 function initializeSettings() {
     // Recuperar tamanho de fonte
-    const savedFontSize = localStorage.getItem('accessibilityFontSize') || 'medium';
+    const savedFontSize = getCookie('accessibilityFontSize') || 'medium';
     setFontSize(savedFontSize);
     
     // Recuperar modo de tema
-    const savedThemeMode = localStorage.getItem('accessibilityContrastMode') || 'normal';
+    const savedThemeMode = getCookie('accessibilityContrastMode') || 'normal';
     setContrastMode(savedThemeMode);
     
     // Atualizar visualmente os botões ativos
@@ -97,8 +102,8 @@ function initializeSettings() {
  */
 function updateActiveButtons() {
     // Recuperar configurações atuais
-    const currentFontSize = localStorage.getItem('accessibilityFontSize') || 'medium';
-    const currentContrastMode = localStorage.getItem('accessibilityContrastMode') || 'normal';
+    const currentFontSize = getCookie('accessibilityFontSize') || 'medium';
+    const currentContrastMode = getCookie('accessibilityContrastMode') || 'normal';
     
     // Atualizar botões de tamanho de fonte
     document.querySelectorAll('.font-size-option').forEach(button => {
@@ -228,8 +233,8 @@ function setFontSize(size) {
     // Aplicar tamanho base
     document.documentElement.style.fontSize = baseFontSize;
     
-    // Salvar preferência
-    localStorage.setItem('accessibilityFontSize', size);
+    // Salvar preferência em cookie (validade de 30 dias)
+    setCookie('accessibilityFontSize', size, 30);
 }
 
 /**
@@ -248,8 +253,8 @@ function setContrastMode(mode) {
         // 'normal' não precisa de classe adicional
     }
     
-    // Salvar preferência
-    localStorage.setItem('accessibilityContrastMode', mode);
+    // Salvar preferência em cookie (validade de 30 dias)
+    setCookie('accessibilityContrastMode', mode, 30);
 }
 
 /**

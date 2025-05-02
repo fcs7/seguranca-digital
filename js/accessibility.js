@@ -7,7 +7,12 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize accessibility settings from localStorage if available
+    // Importar utilitários de cookie (certifique-se de incluir o script cookie-utils.js antes deste)
+    if (typeof setCookie !== 'function') {
+        console.error('Cookie utilities not found. Make sure cookie-utils.js is loaded first.');
+    }
+    
+    // Initialize accessibility settings from cookies if available
     initializeAccessibilitySettings();
     
     // Set up event listeners for accessibility controls
@@ -19,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeAccessibilitySettings() {
     // Check for saved font size preference
-    const savedFontSize = localStorage.getItem('fontSize');
+    const savedFontSize = getCookie('fontSize');
     if (savedFontSize) {
         document.documentElement.style.fontSize = savedFontSize;
     }
     
     // Check for saved contrast preference
-    const highContrast = localStorage.getItem('highContrast') === 'true';
+    const highContrast = getCookie('highContrast') === 'true';
     if (highContrast) {
         document.body.classList.add('high-contrast');
     }
@@ -81,8 +86,8 @@ function increaseFontSize() {
     // Apply new size
     document.documentElement.style.fontSize = newSize;
     
-    // Save preference
-    localStorage.setItem('fontSize', newSize);
+    // Save preference in cookie (30 dias de validade)
+    setCookie('fontSize', newSize, 30);
     
     // Announce change to screen readers
     announceToScreenReader('Font size ' + (newSize === '18px' ? 'reset to default' : 'increased'));
@@ -91,8 +96,8 @@ function increaseFontSize() {
 function toggleContrast() {
     const isHighContrast = document.body.classList.toggle('high-contrast');
     
-    // Save preference
-    localStorage.setItem('highContrast', isHighContrast);
+    // Save preference in cookie
+    setCookie('highContrast', isHighContrast.toString(), 30);
     
     // Announce change to screen readers
     announceToScreenReader(isHighContrast ? 'High contrast mode enabled' : 'High contrast mode disabled');

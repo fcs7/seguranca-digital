@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa do Site - Segurança Digital</title>
-    <!-- Google Fonts - Nunito -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Estilos para UI moderna -->
-    <link rel="stylesheet" href="../css/modern-ui.css">
-    <!-- Estilos para a barra de acessibilidade -->
-    <link rel="stylesheet" href="../css/accessibility-bar.css">
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome para ícones reconhecíveis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos do site redesenhados -->
+    <link rel="stylesheet" href="../css/styles-new.css">
+    
+    <!-- Estilos para a barra de acessibilidade -->
+    <link rel="stylesheet" href="../css/accessibility-bar.css">
+
+    <!-- Script de tema que carrega imediatamente -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/theme-loader.js"></script>
+
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/accessibility-bar.js"></script>
+    <script src="../js/theme-manager.js"></script>
 </head>
 <body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
     <header>
         <div class="container">
             <h1>Segurança Digital</h1>
-            <button id="contrast-toggle" aria-label="Alternar modo de alto contraste">
-                <i class="fas fa-adjust"></i> Contraste
-            </button>
-            <button id="font-size-increase" aria-label="Aumentar tamanho da fonte">
-                <i class="fas fa-search-plus"></i> Texto Maior
-            </button>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
         </div>
     </header>
 
@@ -50,79 +67,220 @@
             <section class="content">
                 <div class="sitemap">
                     <div class="sitemap-section">
-                        <h3><i class="fas fa-home"></i> Páginas Principais</h3>
-                        <ul class="sitemap-list">
-                            <li><a href="../index.html">Página Inicial</a> - Visão geral do site e acesso rápido aos principais tópicos</li>
-                            <li><a href="password-security.html">Senhas Seguras</a> - Como criar e gerenciar senhas fortes</li>
-                            <li><a href="email-safety.html">Segurança de Email</a> - Como identificar phishing e manter seu email seguro</li>
-                            <li><a href="online-scams.html">Evitando Golpes</a> - Reconhecer e evitar golpes online comuns</li>
-                            <li><a href="resources.html">Recursos</a> - Ferramentas e materiais educativos recomendados</li>
-                            <li><a href="contact.html">Ajuda & Contato</a> - Formulário de contato e perguntas frequentes</li>
-                        </ul>
+                        <div class="section-header">
+                            <i class="fas fa-home"></i>
+                            <h3>Páginas Principais</h3>
+                        </div>
+                        <div class="sitemap-card">
+                            <ul class="sitemap-list">
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-home"></i>
+                                        <a href="../index.html">Página Inicial</a>
+                                    </div>
+                                    <p>Visão geral do site e acesso rápido aos principais tópicos</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-key"></i>
+                                        <a href="password-security.html">Senhas Seguras</a>
+                                    </div>
+                                    <p>Como criar e gerenciar senhas fortes</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="email-safety.html">Segurança de Email</a>
+                                    </div>
+                                    <p>Como identificar phishing e manter seu email seguro</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <a href="online-scams.html">Evitando Golpes</a>
+                                    </div>
+                                    <p>Reconhecer e evitar golpes online comuns</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-book"></i>
+                                        <a href="resources.html">Recursos</a>
+                                    </div>
+                                    <p>Ferramentas e materiais educativos recomendados</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="contact.html">Ajuda & Contato</a>
+                                    </div>
+                                    <p>Formulário de contato e perguntas frequentes</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="sitemap-section">
-                        <h3><i class="fas fa-info-circle"></i> Páginas Informativas</h3>
-                        <ul class="sitemap-list">
-                            <li><a href="accessibility.html">Acessibilidade</a> - Declaração de acessibilidade e recursos disponíveis</li>
-                            <li><strong>Mapa do Site</strong> - Esta página, que mostra a estrutura do site</li>
-                        </ul>
+                        <div class="section-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h3>Páginas Informativas</h3>
+                        </div>
+                        <div class="sitemap-card">
+                            <ul class="sitemap-list">
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-universal-access"></i>
+                                        <a href="accessibility.html">Acessibilidade</a>
+                                    </div>
+                                    <p>Declaração de acessibilidade e recursos disponíveis</p>
+                                </li>
+                                <li>
+                                    <div class="page-link active">
+                                        <i class="fas fa-sitemap"></i>
+                                        <span>Mapa do Site</span>
+                                    </div>
+                                    <p>Esta página, que mostra a estrutura do site</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="sitemap-section">
-                        <h3><i class="fas fa-shield-alt"></i> Conteúdo de Segurança Digital</h3>
-                        <h4>Senhas Seguras</h4>
-                        <ul class="sitemap-sublist">
-                            <li><a href="password-security.html#why-strong-passwords">Por que senhas fortes são importantes</a></li>
-                            <li><a href="password-security.html#creating-strong-passwords">Criando senhas fortes</a></li>
-                            <li><a href="password-security.html#password-management">Dicas para gerenciar senhas</a></li>
-                            <li><a href="password-security.html#password-managers">Gerenciadores de senhas recomendados</a></li>
-                        </ul>
+                        <div class="section-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Conteúdo de Segurança Digital</h3>
+                        </div>
+                        <div class="sitemap-card">
+                            <div class="content-section">
+                                <h4><i class="fas fa-key"></i> Senhas Seguras</h4>
+                                <ul class="sitemap-sublist">
+                                    <li><a href="password-security.html#why-strong-passwords">Por que senhas fortes são importantes</a></li>
+                                    <li><a href="password-security.html#creating-strong-passwords">Criando senhas fortes</a></li>
+                                    <li><a href="password-security.html#password-management">Dicas para gerenciar senhas</a></li>
+                                    <li><a href="password-security.html#password-managers">Gerenciadores de senhas recomendados</a></li>
+                                </ul>
+                            </div>
 
-                        <h4>Segurança de Email</h4>
-                        <ul class="sitemap-sublist">
-                            <li><a href="email-safety.html#phishing">Reconhecendo emails de phishing</a></li>
-                            <li><a href="email-safety.html#protecting-email">Protegendo sua conta de email</a></li>
-                            <li><a href="email-safety.html#handling-suspicious-emails">O que fazer com emails suspeitos</a></li>
-                            <li><a href="email-safety.html#phishing-example">Exemplo de email de phishing</a></li>
-                        </ul>
+                            <div class="content-section">
+                                <h4><i class="fas fa-envelope"></i> Segurança de Email</h4>
+                                <ul class="sitemap-sublist">
+                                    <li><a href="email-safety.html#phishing">Reconhecendo emails de phishing</a></li>
+                                    <li><a href="email-safety.html#protecting-email">Protegendo sua conta de email</a></li>
+                                    <li><a href="email-safety.html#handling-suspicious-emails">O que fazer com emails suspeitos</a></li>
+                                    <li><a href="email-safety.html#phishing-example">Exemplo de email de phishing</a></li>
+                                </ul>
+                            </div>
 
-                        <h4>Evitando Golpes</h4>
-                        <ul class="sitemap-sublist">
-                            <li><a href="online-scams.html#romance-scams">Golpes românticos</a></li>
-                            <li><a href="online-scams.html#tech-support-scams">Golpes de suporte técnico</a></li>
-                            <li><a href="online-scams.html#grandparent-scams">Golpes do falso neto</a></li>
-                            <li><a href="online-scams.html#lottery-scams">Golpes de loteria e prêmios</a></li>
-                            <li><a href="online-scams.html#general-tips">Dicas gerais para evitar golpes</a></li>
-                            <li><a href="online-scams.html#what-to-do">O que fazer se você foi vítima de um golpe</a></li>
-                        </ul>
+                            <div class="content-section">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</h4>
+                                <ul class="sitemap-sublist">
+                                    <li><a href="online-scams.html#romance-scams">Golpes românticos</a></li>
+                                    <li><a href="online-scams.html#tech-support-scams">Golpes de suporte técnico</a></li>
+                                    <li><a href="online-scams.html#grandparent-scams">Golpes do falso neto</a></li>
+                                    <li><a href="online-scams.html#lottery-scams">Golpes de loteria e prêmios</a></li>
+                                    <li><a href="online-scams.html#general-tips">Dicas gerais para evitar golpes</a></li>
+                                    <li><a href="online-scams.html#what-to-do">O que fazer se você foi vítima de um golpe</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="sitemap-section">
-                        <h3><i class="fas fa-book"></i> Recursos</h3>
-                        <ul class="sitemap-list">
-                            <li><a href="resources.html#recommended-tools">Ferramentas recomendadas</a></li>
-                            <li><a href="resources.html#educational-materials">Materiais educativos</a></li>
-                            <li><a href="resources.html#educational-videos">Vídeos educativos</a></li>
-                            <li><a href="resources.html#reporting-scams">Onde denunciar golpes</a></li>
-                            <li><a href="resources.html#printable-versions">Versões para imprimir</a></li>
-                        </ul>
+                        <div class="section-header">
+                            <i class="fas fa-book"></i>
+                            <h3>Recursos</h3>
+                        </div>
+                        <div class="sitemap-card">
+                            <ul class="sitemap-list">
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-tools"></i>
+                                        <a href="resources.html#recommended-tools">Ferramentas recomendadas</a>
+                                    </div>
+                                    <p>Gerenciadores de senhas, antivírus e navegadores seguros</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <a href="resources.html#educational-materials">Materiais educativos</a>
+                                    </div>
+                                    <p>Sites e portais com informações sobre segurança digital</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-video"></i>
+                                        <a href="resources.html#educational-videos">Vídeos educativos</a>
+                                    </div>
+                                    <p>Canais e vídeos úteis sobre segurança online</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href="resources.html#reporting-scams">Onde denunciar golpes</a>
+                                    </div>
+                                    <p>Canais oficiais para reportar fraudes e golpes online</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-print"></i>
+                                        <a href="resources.html#printable-versions">Versões para imprimir</a>
+                                    </div>
+                                    <p>Guias em PDF para compartilhar com amigos e familiares</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="sitemap-section">
-                        <h3><i class="fas fa-phone"></i> Ajuda & Contato</h3>
-                        <ul class="sitemap-list">
-                            <li><a href="contact.html#contact-info">Informações de contato</a></li>
-                            <li><a href="contact.html#faq">Perguntas frequentes</a></li>
-                            <li><a href="contact.html#contact-form">Formulário de contato</a></li>
-                            <li><a href="contact.html#emergency">Em caso de emergência</a></li>
-                        </ul>
+                        <div class="section-header">
+                            <i class="fas fa-phone"></i>
+                            <h3>Ajuda & Contato</h3>
+                        </div>
+                        <div class="sitemap-card">
+                            <ul class="sitemap-list">
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-info-circle"></i>
+                                        <a href="contact.html#contact-info">Informações de contato</a>
+                                    </div>
+                                    <p>Email, telefone e horários de atendimento</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-question-circle"></i>
+                                        <a href="contact.html#faq">Perguntas frequentes</a>
+                                    </div>
+                                    <p>Respostas para dúvidas comuns sobre segurança digital</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-paper-plane"></i>
+                                        <a href="contact.html#contact-form">Formulário de contato</a>
+                                    </div>
+                                    <p>Envie suas dúvidas, sugestões ou denúncias</p>
+                                </li>
+                                <li>
+                                    <div class="page-link">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href="contact.html#emergency">Em caso de emergência</a>
+                                    </div>
+                                    <p>O que fazer se você está sendo vítima de um golpe ou crime digital</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="tip-box">
-                    <h4><i class="fas fa-search"></i> Não encontrou o que procura?</h4>
-                    <p>Se você não consegue encontrar a informação que está procurando, entre em contato conosco através da <a href="contact.html">página de contato</a>. Ficaremos felizes em ajudar.</p>
+                <div class="search-help-box">
+                    <div class="search-help-header">
+                        <i class="fas fa-search"></i>
+                        <h4>Não encontrou o que procura?</h4>
+                    </div>
+                    <div class="search-help-content">
+                        <p>Se você não consegue encontrar a informação que está procurando, entre em contato conosco através da <a href="contact.html">página de contato</a>. Ficaremos felizes em ajudar.</p>
+                        <a href="contact.html" class="button">
+                            <i class="fas fa-envelope"></i> Entrar em Contato
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -131,20 +289,245 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Segurança Digital</p>
-            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html" aria-current="page">Mapa do Site</a></p>
         </div>
     </footer>
 
-    <script src="../js/accessibility.js"></script>
-    <script src="../js/main.js"></script>
-    <!-- Nova barra de acessibilidade -->
-    <script src="../js/accessibility-bar.js"></script>
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
     
-    <!-- Atalho de teclado: pressione Alt+A para abrir o menu de acessibilidade -->
-    <div class="sr-only" aria-live="polite">
-        Pressione Alt+A para abrir o menu de acessibilidade.
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
     </div>
-    <!-- Script para melhorias de UX -->
-    <script src="../js/enhanced-ux.js"></script>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de mapa do site */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-header i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        
+        .section-header h3 {
+            color: var(--text-color);
+            margin: 0;
+        }
+        
+        /* Layout de sitemap */
+        .sitemap {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+        
+        .sitemap-section {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .sitemap-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            padding: var(--spacing-lg);
+        }
+        
+        /* Lista principal de links */
+        .sitemap-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sitemap-list li {
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .sitemap-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .page-link {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .page-link i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .page-link a, .page-link span {
+            font-weight: var(--font-weight-semibold);
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .page-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .page-link.active span {
+            color: var(--text-color);
+            font-weight: var(--font-weight-bold);
+        }
+        
+        .sitemap-list p {
+            margin: 0;
+            padding-left: calc(20px + var(--spacing-md));
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* Conteúdo específico das seções */
+        .content-section {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .content-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .content-section h4 {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--text-color);
+            margin-top: 0;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.25rem;
+        }
+        
+        .content-section h4 i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        .sitemap-sublist {
+            padding-left: var(--spacing-xl);
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        
+        .sitemap-sublist li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .sitemap-sublist a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        .sitemap-sublist a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+        
+        /* Box de ajuda para pesquisa */
+        .search-help-box {
+            background-color: rgba(78, 174, 189, 0.05);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(78, 174, 189, 0.2);
+            overflow: hidden;
+        }
+        
+        .search-help-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-lg);
+            background-color: rgba(78, 174, 189, 0.1);
+            border-bottom: 1px solid rgba(78, 174, 189, 0.2);
+        }
+        
+        .search-help-header i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+        
+        .search-help-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .search-help-content {
+            padding: var(--spacing-lg);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+        
+        .search-help-content p {
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .search-help-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .content-section h4 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </body>
 </html>
