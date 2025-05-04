@@ -39,10 +39,27 @@
     width: 280px;
     z-index: 9998; /* Menor que o botão para ficar embaixo caso necessário */
     display: none; /* Inicialmente escondido */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .accessibility-menu.active {
     display: block; /* Mostra o menu quando a classe 'active' é adicionada */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ajuste para tema escuro */
+[data-theme="dark"] .accessibility-menu {
+    background-color: #1c2833;
+    color: white;
+    border: 1px solid #34495e;
+}
+
+[data-theme="dark"] .accessibility-menu h3,
+[data-theme="dark"] .accessibility-menu h4 {
+    color: white;
 }
 
 /* Título do menu */
