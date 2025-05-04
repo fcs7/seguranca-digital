@@ -1,8 +1,8 @@
-# Digital Security for Seniors Website
+# Site de Segurança Digital
 
-A website focused on digital security education for seniors with emphasis on accessibility, large fonts, high contrast, and intuitive navigation.
+Um site voltado para a educação em segurança digital com foco em acessibilidade, legibilidade (fontes grandes), alto contraste e navegação intuitiva para todos os públicos, incluindo pessoas com diferentes níveis de habilidade digital.
 
-## Directory Structure
+## Estrutura de Diretórios
 
 ```
 website/
@@ -24,43 +24,43 @@ website/
 └── index.html
 ```
 
-## Accessibility Features
+## Recursos de Acessibilidade
 
-This website includes the following accessibility features:
+Este site inclui os seguintes recursos de acessibilidade:
 
-- Large base font size (18px)
-- High contrast mode toggle
-- Adjustable font size
-- Keyboard navigation support with skip links
-- Screen reader announcements for state changes
-- Semantic HTML structure
-- ARIA attributes for improved accessibility
-- Clear, intuitive navigation with recognizable icons
-- Focus management
-- Responsive design for all device sizes
+* Tamanho base de fonte grande (18px)
+* Alternância de modo de alto contraste
+* Ajuste de tamanho da fonte
+* Suporte à navegação por teclado com links de pular para o conteúdo
+* Anúncios para leitores de tela sobre mudanças de estado
+* Estrutura HTML semântica
+* Atributos ARIA para acessibilidade aprimorada
+* Navegação clara e intuitiva com ícones reconhecíveis
+* Gerenciamento de foco
+* Design responsivo para todos os tamanhos de tela e dispositivos
 
-## Framework Recommendations
+## Recomendações de Frameworks
 
-While this is currently a simple HTML/CSS/JS implementation, potential frameworks/libraries to consider:
+Apesar da implementação atual usar HTML/CSS/JS puros, considere os seguintes frameworks/bibliotecas para evoluir o projeto:
 
-1. **Bootstrap** - For responsive design and accessibility components
-2. **React + React Router** - For more complex, component-based architecture
-3. **Vue.js** - For lightweight, progressive enhancement
-4. **WAI-ARIA Authoring Practices** - Guidelines for accessible web components
+1. **Bootstrap** – Para um design responsivo com componentes acessíveis prontos
+2. **React + React Router** – Ideal para uma arquitetura baseada em componentes
+3. **Vue.js** – Alternativa leve e progressiva
+4. **WAI-ARIA Authoring Practices** – Diretrizes para componentes web acessíveis
 
-## Development
+## Desenvolvimento
 
-To develop this website further:
+Para continuar o desenvolvimento do site:
 
-1. Add content to the page templates in the `pages/` directory
-2. Add images to the `images/` directory
-3. Add additional resources to the `resources/` directory
-4. Enhance accessibility features as needed
+1. Adicione conteúdo nas páginas do diretório `pages/`
+2. Insira imagens no diretório `images/`
+3. Acrescente novos materiais ao diretório `resources/`
+4. Aprimore continuamente os recursos de acessibilidade conforme necessário
 
-## Accessibility Testing Recommendations
+## Ferramentas Recomendadas para Testes de Acessibilidade
 
-- WebAIM WAVE - Web accessibility evaluation tool
-- axe DevTools - Accessibility testing browser extension
-- Lighthouse - Chrome DevTools accessibility audit
-- Screen reader testing (NVDA, JAWS, VoiceOver)
-- Keyboard-only navigation testing
+* **WebAIM WAVE** – Ferramenta de avaliação de acessibilidade
+* **axe DevTools** – Extensão de navegador para auditoria de acessibilidade
+* **Lighthouse** – Ferramenta integrada ao Chrome DevTools
+* **Testes com leitores de tela** (NVDA, JAWS, VoiceOver)
+* **Testes de navegação apenas por teclado**
