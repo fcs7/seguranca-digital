@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de Email - Segurança Digital</title>
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos consolidados do site -->
+    <link rel="stylesheet" href="../css/styles-consolidado.css">
+    
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/acessibilidade-consolidado.js"></script>
+</head>
+<body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html" class="active"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Segurança de Email</h2>
+                <p>Email é uma das formas mais comuns que golpistas usam para tentar roubar suas informações ou dinheiro. Aprender a identificar emails suspeitos é uma habilidade de segurança digital essencial.</p>
+            </section>
+
+            <section class="content">
+                <div class="card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Reconhecendo Emails de Phishing</h3>
+                    <p>Emails de phishing são mensagens fraudulentas projetadas para enganá-lo a revelar informações pessoais ou instalar software malicioso. Veja como identificá-los:</p>
+                    
+                    <div class="warning-signs">
+                        <h4>Sinais de alerta em emails de phishing:</h4>
+                        <ul>
+                            <li><strong>Linguagem urgente ou ameaçadora</strong> - Afirma que sua conta será fechada, você será multado ou está com problemas legais</li>
+                            <li><strong>Solicitações de informações pessoais</strong> - Empresas legítimas raramente pedem informações sensíveis por email</li>
+                            <li><strong>Endereço de remetente suspeito</strong> - O endereço de email não corresponde ao domínio oficial da empresa</li>
+                            <li><strong>Saudação genérica</strong> - "Caro Cliente" em vez do seu nome</li>
+                            <li><strong>Erros de ortografia e gramática</strong> - Empresas profissionais revisam suas comunicações</li>
+                            <li><strong>Links ou anexos suspeitos</strong> - Passe o mouse sobre links para ver para onde realmente vão</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-shield-alt"></i> Protegendo Sua Conta de Email</h3>
+                    <ol>
+                        <li><strong>Use uma senha forte e única</strong> para sua conta de email</li>
+                        <li><strong>Ative a autenticação de dois fatores</strong> para segurança adicional</li>
+                        <li><strong>Tenha cuidado com Wi-Fi público</strong> ao verificar emails</li>
+                        <li><strong>Saia da sua conta</strong> ao usar computadores compartilhados</li>
+                        <li><strong>Atualize seu aplicativo de email</strong> regularmente</li>
+                        <li><strong>Considere usar um endereço de email separado</strong> para compras online ou newsletters</li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-trash-alt"></i> O Que Fazer com Emails Suspeitos</h3>
+                    <ul>
+                        <li><strong>Não clique em links ou baixe anexos</strong> de remetentes desconhecidos</li>
+                        <li><strong>Não responda</strong> a emails suspeitos</li>
+                        <li><strong>Marque como spam</strong> usando o botão de spam do seu provedor de email</li>
+                        <li><strong>Exclua o email</strong> depois de marcá-lo como spam</li>
+                        <li><strong>Se tiver dúvidas sobre um email de uma empresa que você conhece</strong>, entre em contato com ela diretamente pelo site oficial ou telefone (não pelo email)</li>
+                    </ul>
+                </div>
+
+                <div class="example-box phishing-email">
+                    <div class="example-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h4>Exemplo de um Email de Phishing:</h4>
+                    </div>
+                    <div class="phishing-example">
+                        <p><strong>De:</strong> seguranca@netf1ix.com <span class="highlight">(observe o "1" em vez de "l")</span></p>
+                        <p><strong>Assunto:</strong> URGENTE: Sua Conta Netflix Foi Suspensa</p>
+                        <p><strong>Mensagem:</strong></p>
+                        <div class="message-body">
+                            <p>Prezado Cliente,</p>
+                            <p>Lamentamos informar que sua conta Netflix foi temporariamente suspensa devido a um problema com suas informações de cobrança. Para evitar a interrupção do serviço, atualize seus dados de pagamento imediatamente clicando no link abaixo:</p>
+                            <p class="fake-link">[Atualizar Informações de Pagamento]</p>
+                            <p>Se você não atualizar suas informações em 24 horas, sua conta será permanentemente excluída.</p>
+                            <p>Equipe de Suporte Netflix</p>
+                        </div>
+                    </div>
+                    <div class="analysis">
+                        <p><strong>Por que isso é suspeito:</strong></p>
+                        <ul>
+                            <li>Tom urgente e ameaçador</li>
+                            <li>Endereço de email com caracteres modificados</li>
+                            <li>Não se dirige a você pelo nome</li>
+                            <li>Solicita clique em link para fornecer informações pessoais</li>
+                            <li>Ameaça de exclusão da conta para gerar ansiedade</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <div class="tip-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Dica de Segurança de Email</h4>
+                    </div>
+                    <div class="tip-content">
+                        <p>Em caso de dúvida, não clique! Se você receber um email que parece importante, mas suspeito, entre em contato com a empresa diretamente pelo site oficial ou número de telefone que você procurou (não pelo email).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
+    
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de segurança de email */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            padding: var(--spacing-lg) var(--spacing-xl);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        
+        .card h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+        
+        .card h3 i {
+            font-size: 1.2rem;
+        }
+        
+        .card ul, .card ol {
+            padding-left: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .card li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+        
+        .card li strong {
+            color: var(--text-color);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .warning-signs {
+            background-color: rgba(231, 69, 86, 0.05);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .warning-signs h4 {
+            color: var(--danger-color);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .example-box {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            margin-bottom: var(--spacing-lg);
+            overflow: hidden;
+        }
+        
+        .example-header {
+            background-color: rgba(231, 69, 86, 0.1);
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            border-bottom: 1px solid rgba(231, 69, 86, 0.2);
+        }
+        
+        .example-header i {
+            color: var(--danger-color);
+            font-size: 1.2rem;
+        }
+        
+        .example-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .phishing-example {
+            padding: var(--spacing-lg);
+            background-color: var(--card-bg);
+        }
+        
+        .phishing-example p {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .highlight {
+            background-color: rgba(231, 69, 86, 0.1);
+            color: var(--danger-color);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        .message-body {
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md) var(--spacing-lg);
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .fake-link {
+            color: var(--link-color);
+            cursor: pointer;
+            text-decoration: underline;
+            display: inline-block;
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .analysis {
+            background-color: rgba(0, 107, 184, 0.05);
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .analysis ul {
+            margin-bottom: 0;
+        }
+        
+        .tip-box {
+            background-color: rgba(0, 107, 184, 0.05);
+            border-left: 4px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md) var(--spacing-lg);
+        }
+        
+        .tip-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .tip-header i {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        
+        .tip-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .card {
+                padding: var(--spacing-md);
+            }
+            
+            .phishing-example, .analysis {
+                padding: var(--spacing-md);
+            }
+        }
+    </style>
+</body>
+</html>

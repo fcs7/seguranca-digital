@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade - Segurança Digital</title>
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos consolidados do site -->
+    <link rel="stylesheet" href="../css/styles-consolidado.css">
+    
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/acessibilidade-consolidado.js"></script>
+</head>
+<body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Declaração de Acessibilidade</h2>
+                <p>Estamos comprometidos em tornar este site acessível para todos os usuários, independentemente de suas habilidades ou tecnologias.</p>
+            </section>
+
+            <section class="content">
+                <div class="section-header">
+                    <i class="fas fa-universal-access"></i>
+                    <h3>Nosso Compromisso com a Acessibilidade</h3>
+                </div>
+                
+                <div class="card commitment">
+                    <p>O site "Segurança Digital" foi projetado e desenvolvido para ser acessível a todos, com atenção especial às necessidades de diversos usuários e pessoas com deficiências. Nosso objetivo é garantir que todas as informações e funcionalidades sejam acessíveis, independentemente da tecnologia ou capacidade do usuário.</p>
+                </div>
+
+                <div class="section-header">
+                    <i class="fas fa-list-alt"></i>
+                    <h3>Recursos de Acessibilidade</h3>
+                </div>
+                
+                <p>Este site inclui os seguintes recursos de acessibilidade:</p>
+
+                <div class="accessibility-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-text-height"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Tamanho de Fonte Ajustável</h4>
+                            <p>O texto base do site é grande (18px) para facilitar a leitura, e você pode aumentá-lo ainda mais usando o menu de acessibilidade flutuante ou pressionando Alt+A para abrir as opções de acessibilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-adjust"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Modo Claro e Escuro</h4>
+                            <p>Você pode alternar entre o modo claro e escuro clicando no botão "Tema" no cabeçalho ou no menu de acessibilidade flutuante. Isso permite escolher o contraste que é mais confortável para sua visão.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Navegação por Teclado</h4>
+                            <p>Todas as funcionalidades do site podem ser acessadas usando apenas o teclado. Use a tecla Tab para navegar entre os elementos e Enter para ativar links e botões.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Link de Pular para Conteúdo</h4>
+                            <p>Um link "Pular para o conteúdo principal" aparece quando você começa a navegar com o teclado, permitindo que você pule o menu de navegação.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heading"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Estrutura Semântica</h4>
+                            <p>Usamos títulos (H1-H6) de forma hierárquica e estruturada para facilitar a navegação com leitores de tela.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Texto Alternativo para Imagens</h4>
+                            <p>Todas as imagens têm texto alternativo (alt) descritivo para usuários de leitores de tela.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Design Responsivo</h4>
+                            <p>O site se adapta a diferentes tamanhos de tela, desde celulares até desktops, mantendo a facilidade de uso.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-deaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Suporte para Leitor de Tela</h4>
+                            <p>O site é compatível com leitores de tela e inclui atributos ARIA para melhorar a experiência.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <i class="fas fa-eye"></i>
+                    <h3>Dicas para Navegar com Acessibilidade</h3>
+                </div>
+                
+                <div class="card tips">
+                    <ul class="tips-list">
+                        <li>
+                            <div class="tip-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>Aumentar o texto no navegador:</strong>
+                                <p>Use Ctrl+ (Windows/Linux) ou Cmd+ (Mac) para aumentar o zoom da página</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tip-icon">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>Navegação por teclado:</strong>
+                                <p>Use Tab para navegar entre links e controles, Enter para ativar</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tip-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>Leitores de tela:</strong>
+                                <p>Recomendamos NVDA (Windows, gratuito) ou VoiceOver (Mac, integrado)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tip-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>Configurações do navegador:</strong>
+                                <p>A maioria dos navegadores modernos tem configurações de acessibilidade que podem ser ajustadas</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-header">
+                    <i class="fas fa-bug"></i>
+                    <h3>Problemas de Acessibilidade</h3>
+                </div>
+                
+                <div class="card feedback">
+                    <p>Estamos sempre trabalhando para melhorar a acessibilidade deste site. Se você encontrar algum problema ou tiver sugestões para melhorar a acessibilidade, por favor entre em contato conosco através da nossa <a href="contact.html">página de contato</a>.</p>
+                </div>
+
+                <div class="section-header">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Conformidade com Padrões</h3>
+                </div>
+                
+                <div class="card standards">
+                    <p>Este site foi desenvolvido visando a conformidade com as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1, nível AA.</p>
+                    <div class="standards-seal">
+                        <i class="fas fa-award"></i>
+                        <span>WCAG 2.1 AA</span>
+                    </div>
+                </div>
+
+                <div class="help-box">
+                    <div class="help-header">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Precisa de Ajuda Adicional?</h4>
+                    </div>
+                    <div class="help-content">
+                        <p>Se você precisar de assistência para acessar qualquer parte deste site ou tiver dúvidas sobre nossos recursos de acessibilidade, entre em contato conosco:</p>
+                        <ul class="contact-options">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>Email: <a href="mailto:acessibilidade@segurancaparaidosos.org.br">acessibilidade@segurancaparaidosos.org.br</a></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>Telefone: (11) 0800-123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html" aria-current="page">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
+    
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de acessibilidade */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-header i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        
+        .section-header h3 {
+            color: var(--text-color);
+            margin: 0;
+        }
+        
+        /* Cartão padrão */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* Grid de recursos de acessibilidade */
+        .accessibility-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: var(--transition-fast);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-color);
+        }
+        
+        .feature-icon {
+            background-color: rgba(0, 107, 184, 0.1);
+            padding: var(--spacing-md) 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+        }
+        
+        .feature-content h4 {
+            margin-top: 0;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .feature-content p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+        
+        /* Dicas de acessibilidade */
+        .tips-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .tips-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .tips-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .tip-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 107, 184, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .tip-icon i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .tip-content {
+            flex-grow: 1;
+        }
+        
+        .tip-content strong {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-color);
+        }
+        
+        .tip-content p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        
+        /* Conformidade com padrões */
+        .standards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-lg);
+        }
+        
+        .standards p {
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        .standards-seal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(78, 174, 189, 0.1);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            color: var(--secondary-color);
+            flex-shrink: 0;
+        }
+        
+        .standards-seal i {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .standards-seal span {
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        /* Box de ajuda */
+        .help-box {
+            background-color: rgba(78, 174, 189, 0.05);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(78, 174, 189, 0.2);
+            overflow: hidden;
+        }
+        
+        .help-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-lg);
+            background-color: rgba(78, 174, 189, 0.1);
+            border-bottom: 1px solid rgba(78, 174, 189, 0.2);
+        }
+        
+        .help-header i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+        
+        .help-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .help-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .help-content p {
+            margin-top: 0;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .contact-options {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .contact-options li {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .contact-options li i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .accessibility-features {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .standards {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-md);
+            }
+            
+            .tips-list li {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .tip-icon {
+                margin-bottom: var(--spacing-xs);
+            }
+        }
+    </style>
+</body>
+</html>

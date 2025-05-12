@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evitando Golpes - Segurança Digital</title>
+    
+    <!-- Fonte Inter para design clean e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones reconhecíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Estilos consolidados do site -->
+    <link rel="stylesheet" href="../css/styles-consolidado.css">
+    
+    <!-- Scripts para manipulação de cookies e acessibilidade -->
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/cookie-consent.js"></script>
+    <script src="../js/acessibilidade-consolidado.js"></script>
+</head>
+<body>
+    <!-- Link para pular para o conteúdo principal -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <div class="accessibility-controls">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fas fa-moon"></i> Tema
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="password-security.html"><i class="fas fa-key"></i> Senhas Seguras</a></li>
+                <li><a href="email-safety.html"><i class="fas fa-envelope"></i> Segurança de Email</a></li>
+                <li><a href="online-scams.html" class="active"><i class="fas fa-exclamation-triangle"></i> Evitando Golpes</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Recursos</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Ajuda & Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Evitando Golpes Online</h2>
+                <p>Golpistas estão constantemente criando novas maneiras de enganar pessoas online. Conhecer os golpes comuns pode ajudar você a proteger a si mesmo e seu dinheiro.</p>
+            </section>
+
+            <section class="content">
+                <div class="section-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Golpes Online Comuns</h3>
+                </div>
+                
+                <div class="scams-grid">
+                    <div class="scam-card">
+                        <div class="scam-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="scam-content">
+                            <h4>Golpes Românticos</h4>
+                            <p>Golpistas criam perfis falsos em sites de relacionamento ou redes sociais, constroem relacionamentos românticos com vítimas e depois pedem dinheiro para supostas emergências.</p>
+                            <div class="protection-tips">
+                                <h5>Como se proteger:</h5>
+                                <ul>
+                                    <li>Desconfie se alguém que você nunca conheceu pessoalmente declara amor rapidamente</li>
+                                    <li>Faça uma busca reversa da foto do perfil deles (usando o Google Imagens)</li>
+                                    <li>Nunca envie dinheiro para alguém que você não conheceu pessoalmente</li>
+                                    <li>Fique atento se eles sempre têm desculpas para não fazer videochamadas ou encontros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scam-card">
+                        <div class="scam-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <div class="scam-content">
+                            <h4>Golpes de Suporte Técnico</h4>
+                            <p>Golpistas afirmam ser da Microsoft, Apple ou outras empresas de tecnologia, dizendo que seu dispositivo tem um problema. Eles pedem acesso remoto ao seu computador ou pagamento para corrigir problemas inexistentes.</p>
+                            <div class="protection-tips">
+                                <h5>Como se proteger:</h5>
+                                <ul>
+                                    <li>Empresas de tecnologia legítimas não ligam para você sobre problemas no dispositivo</li>
+                                    <li>Nunca dê acesso remoto ao seu computador para alguém que entrou em contato com você</li>
+                                    <li>Não ligue para números de telefone de avisos pop-up em seu computador</li>
+                                    <li>Se estiver preocupado com seu dispositivo, entre em contato com o fabricante diretamente pelo site oficial</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scam-card">
+                        <div class="scam-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="scam-content">
+                            <h4>Golpes do Falso Neto</h4>
+                            <p>Golpistas ligam fingindo ser um neto em apuros, alegando que precisam de dinheiro para uma emergência (como fiança ou contas hospitalares).</p>
+                            <div class="protection-tips">
+                                <h5>Como se proteger:</h5>
+                                <ul>
+                                    <li>Crie uma senha familiar que apenas membros da família conheceriam</li>
+                                    <li>Ligue para outros familiares para verificar a história antes de enviar dinheiro</li>
+                                    <li>Faça perguntas que um golpista não saberia responder</li>
+                                    <li>Desconfie de pedidos de cartões-presente, transferências bancárias ou criptomoedas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scam-card">
+                        <div class="scam-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="scam-content">
+                            <h4>Golpes de Loteria e Prêmios</h4>
+                            <p>Golpistas afirmam que você ganhou uma loteria, sorteio ou prêmio, mas precisa pagar taxas ou impostos para receber seus ganhos.</p>
+                            <div class="protection-tips">
+                                <h5>Como se proteger:</h5>
+                                <ul>
+                                    <li>Se você não participou de uma loteria ou concurso, não pode ganhar</li>
+                                    <li>Prêmios legítimos não exigem pagamento antecipado</li>
+                                    <li>Desconfie de loterias estrangeiras</li>
+                                    <li>Não compartilhe informações pessoais ou financeiras para "verificar sua identidade" para um prêmio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card general-tips">
+                    <h3><i class="fas fa-shield-alt"></i> Dicas Gerais para Evitar Golpes</h3>
+                    <ul>
+                        <li><strong>Se parece bom demais para ser verdade, provavelmente é</strong> - Dinheiro grátis, curas milagrosas e ofertas incríveis geralmente são golpes</li>
+                        <li><strong>Nunca envie dinheiro para alguém que você não conheceu pessoalmente</strong> - Especialmente via transferência bancária, cartões-presente ou criptomoedas</li>
+                        <li><strong>Proteja suas informações pessoais</strong> - Não compartilhe CPF, dados bancários ou senhas</li>
+                        <li><strong>Pesquise antes de agir</strong> - Procure nomes de empresas, números de telefone e sites</li>
+                        <li><strong>Não se sinta pressionado a tomar decisões rápidas</strong> - Golpistas criam urgência para impedir que você pense claramente</li>
+                        <li><strong>Converse com alguém em quem confia</strong> - Discuta situações suspeitas com familiares ou amigos</li>
+                    </ul>
+                </div>
+
+                <div class="action-box">
+                    <div class="action-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h4>O Que Fazer Se Você Foi Vítima de um Golpe</h4>
+                    </div>
+                    <div class="action-content">
+                        <ol>
+                            <li>Reporte o golpe à polícia local</li>
+                            <li>Registre uma denúncia no site de reclamações do Procon</li>
+                            <li>Se compartilhou informações financeiras, entre em contato com seu banco ou operadora de cartão de crédito imediatamente</li>
+                            <li>Se compartilhou senhas, altere-as em todas as suas contas</li>
+                            <li>Considere registrar um alerta de fraude em seu CPF</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Segurança Digital</p>
+            <p><a href="accessibility.html">Acessibilidade</a> | <a href="sitemap.html">Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <!-- Barra de acessibilidade flutuante -->
+    <button class="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
+    
+    <div class="accessibility-menu">
+        <h3 id="accessibility-title">Opções de Acessibilidade</h3>
+        
+        <div class="accessibility-section">
+            <h4>Tamanho do Texto</h4>
+            <div class="option-buttons" role="group" aria-label="Tamanho da fonte">
+                <button class="option-button font-size-option" data-size="small" aria-label="Fonte pequena">
+                    <span class="font-small">A</span> Pequeno
+                </button>
+                <button class="option-button font-size-option" data-size="medium" aria-label="Fonte média">
+                    <span class="font-medium">A</span> Médio
+                </button>
+                <button class="option-button font-size-option" data-size="large" aria-label="Fonte grande">
+                    <span class="font-large">A</span> Grande
+                </button>
+            </div>
+        </div>
+        
+        <div class="accessibility-section">
+            <h4>Modo de Tema</h4>
+            <div class="option-buttons" role="group" aria-label="Modo de tema">
+                <button class="option-button contrast-mode-option" data-mode="normal" aria-label="Modo claro">
+                    Claro
+                    <div class="mode-preview preview-normal">Abc</div>
+                </button>
+                <button class="option-button contrast-mode-option" data-mode="dark" aria-label="Modo escuro">
+                    Escuro
+                    <div class="mode-preview preview-dark">Abc</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Os scripts de tema e acessibilidade foram movidos para arquivos separados -->
+    <!-- Veja js/theme-manager.js e js/theme-loader.js -->
+
+    <style>
+        /* Estilos específicos para a página de golpes online */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-header i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        
+        .section-header h3 {
+            color: var(--text-color);
+            margin: 0;
+        }
+        
+        .scams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .scam-card {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: var(--transition-fast);
+        }
+        
+        .scam-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .scam-icon {
+            background-color: rgba(0, 107, 184, 0.1);
+            padding: var(--spacing-md) 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .scam-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .scam-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+        }
+        
+        .scam-content h4 {
+            margin-top: 0;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .scam-content p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+        
+        .protection-tips {
+            background-color: rgba(55, 177, 90, 0.05);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            border-left: 3px solid var(--success-color);
+        }
+        
+        .protection-tips h5 {
+            margin-top: 0;
+            margin-bottom: var(--spacing-sm);
+            color: var(--success-color);
+            font-size: 1rem;
+        }
+        
+        .protection-tips ul {
+            margin: 0;
+            padding-left: var(--spacing-lg);
+        }
+        
+        .protection-tips li {
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .general-tips {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        
+        .general-tips h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-top: 0;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+        
+        .general-tips i {
+            font-size: 1.2rem;
+        }
+        
+        .general-tips ul {
+            padding-left: var(--spacing-lg);
+            margin-bottom: 0;
+        }
+        
+        .general-tips li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+        
+        .general-tips li strong {
+            color: var(--text-color);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .action-box {
+            background-color: var(--card-bg);
+            border-radius: var(--card-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+        
+        .action-header {
+            background-color: rgba(231, 69, 86, 0.1);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-bottom: 1px solid rgba(231, 69, 86, 0.2);
+        }
+        
+        .action-header i {
+            color: var(--danger-color);
+            font-size: 1.2rem;
+        }
+        
+        .action-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .action-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .action-content ol {
+            padding-left: var(--spacing-lg);
+            margin: 0;
+        }
+        
+        .action-content li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .scams-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .scam-card {
+                margin-bottom: var(--spacing-sm);
+            }
+            
+            .general-tips, .action-content {
+                padding: var(--spacing-md);
+            }
+        }
+    </style>
+</body>
+</html>
